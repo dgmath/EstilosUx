@@ -3,21 +3,44 @@
 /* font-family: 'Quicksand', sans-serif;
 font-family: 'Titillium Web', sans-serif; */
 
+/* reset de propriedades */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: 'Quicksand', sans-serif;
     color: grey;
     margin: 0%;
+    background-color: #edeced;
 }
 
 header {
-  background-color:  grey;
+  background-color:  #676767;
+  }
+  
+  footer{ 
+      background-color: #676767;
   }
 
-  header .grid-layout {
+ /* classes genericas */
+.grid-layout {
     width: 80%;
-    margin: 0 auto;
-    /* background-color: yellowgreen; */
+    margin: 0 auto; 
 }
+  
+    /* Centraliza os elementos automaticamente quando posta em margem pois todos os cantos se tornam iguais */
+    /* background-color: yellowgreen; */
+    
+    /* margin: /* 10px; / top/bottom/right/left todos os cantos */
+    /* margin: /* 0 10px; / top/bottom right/left */
+    /* margin: /* 0 20px 10px; / top right/left bottom */
+    /* margin: /* 10px 10px 10px 10px; / top right bottom left */
+
+              /* *** header*** */
 
 header .header-flex{
     display: flex;
@@ -41,7 +64,7 @@ header h1 #logoux {
 header nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 300px;
 }
@@ -49,3 +72,31 @@ header nav a {
     color: white;
     text-decoration: none;
 }
+
+               /* *** Main *** */
+
+main .colunas-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+main #lapis {
+    width: 100%;
+}
+
+main .coluna1{
+    width: 75%;
+     background-color: white; 
+} /* section  */
+
+ main .coluna2{
+    width: 23%;
+ }  /* aside */
+
+ main .coluna2 article {
+     background-color: white;
+     margin-bottom: 20px;
+ }
+
+         /* ******* footer ******** */
